@@ -1,5 +1,163 @@
-.footer {
+.fas {
+    color: #0065FC;
+}
 
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 300 0 300;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none; 
+    color: black;
+}
+
+nav a :hover {
+    border-bottom:3px dotted #0065FC;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px 0 20px;
+    text-decoration: none; 
+}
+
+.bouton-de-recherche {
+    background-color: #0065FC;
+    border-radius: 5px;
+    border-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+
+.filtres {
+    display: inline-flex;
+}
+
+.filtres-titres {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: black;
+}
+.filtres-icones {
+    color: #0065FC;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #dfecff;
+}
+
+.icone-info {
+    display: flex;
+}
+
+.premier-bloc {
+    max-width: 80%;
+    height: 40%;
+}
+
+.hebergements-a-marseille {
     background-color: #f2f2f2;
+    width: 60%;
+    border-radius: 20px;
+}
 
+.container-1 {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.card-1 {
+    width: 270px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card-image-1 {
+    background-color: white;
+    height: 150px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.les-plus-populaires {
+    background-color: #f2f2f2;
+    width: 30%;
+    flex-direction:column;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.container-2 {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.card-2 {
+    width: 450px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card-image-2 {
+    background-color: white;
+    height: 150px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: left;
+}    
+
+.activites-a-marseille {
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none; 
+    color: black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-items {
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 300px;
 }
