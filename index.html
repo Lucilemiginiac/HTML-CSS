@@ -18,8 +18,8 @@
             <nav>
                 <img src="Dossier/images/logo/Booki.png" alt="Logo bleu société Booki"/>
                 <ul>
-                    <li><a href="#hebergement">Hébergements</a></li>
-                    <li><a href="#sinscrire">S'inscrire</a></li>
+                    <li><a href="#hebergement" class="mousseOver" >Hébergements</a></li> <!-- A voir -->
+                    <li><a href="#sinscrire" class="mousseOver">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,34 +30,34 @@
                 <p>En plein centre ville ou en pleine nature</p>
         
                 <form>
-                    <i class="fas fa-location-dot"></i>
+                    <i class="fa fa-map-marker" style="color: blue;" aria-hidden="true"></i>
                     <input type="text" placeholder="Marseille, France">
                     <button class="bouton-de-recherche">Rechercher</button>
                 </form>
             </div>
-        
+        <!-- Cette partie gere l'entete avec les filtres-->
             <section class="filtres">
 
                 <h3>Filtres</h3>
     
                 <div class="filtres-icones">
                     <i class="fas fa-money-bill-wave filtres-icons"></i>
-                    <div class="filtres-titres">Économique</div>
+                    <span class="filtres-titres">Économique</span>
                 </div>
 
                 <div class="filtres-icones">
                     <i class="fas fa-child filtres-icons"></i>
-                    <div class="filtres-titres">Familial</div>
+                    <span class="filtres-titres">Familial</span>
                 </div>
 
                 <div class="filtres-icones">
                     <i class="fas fa-heart filtres-icons"></i>
-                    <div class="filtres-titres">Romantique</div>
+                    <span class="filtres-titres">Romantique</span>
                 </div>
 
                 <div class="filtres-icones">
                     <i class="fas fa-dog filtres-icons"></i>
-                    <div class="filtres-titres">Animaux autorisés</div>
+                    <span class="filtres-titres">Animaux autorisés</span>
                 </div>
 
             </section>
@@ -73,8 +73,8 @@
                     <h2>Hébergements à Marseille</h2>
                     
                         <section class="container-1">
-                            <div class="card-1">
-                                <img class="card-image-1" src="Dossier/images/hebergements/3_medium/auberge-la-cannebiere.jpg" alt="Photo chambre auberge la cannebiere">
+                            <div>  <!-- A voir : deplacer la classe card-1 pour la mettre sur l'image pour appliquer les border raduis-->
+                                <img class="card-image-1 card-1" src="Dossier/images/hebergements/3_medium/auberge-la-cannebiere.jpg" alt="Photo chambre auberge la cannebiere">
                                 <h3 class="card-title">Auberge La Cannebière</h3>
                                 <p class="card-text">Nuit à partir de 25 €</p>
                                 <i class="fas fa-star"></i>

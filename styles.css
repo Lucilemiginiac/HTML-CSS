@@ -43,6 +43,10 @@ nav li {
     margin: 0 10px 0 20px;
     text-decoration: none; 
 }
+.mousseOver:hover{
+    border-top: solid;
+    color: #0065FC;
+}
 
 .bouton-de-recherche {
     background-color: #0065FC;
@@ -52,10 +56,12 @@ nav li {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     margin: 20px 20px 20px 20px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .filtres {
-    display: inline-block;
+    display: flex; /**  A voir  : pour positionner les elements sur la meme ligne**/
 }
 
 .filtres-titres {
@@ -68,6 +74,7 @@ nav li {
 .filtres-icones {
     color: #0065FC;
     border-radius: 50%;
+    margin-left: 1.9em; /**  A voir mettre de l'espace entre les elements**/
     width: 50px;
     height: 50px;
     border: none;
@@ -230,6 +237,7 @@ nav li {
     position: cover;
     object-position: top;
 }
+
 
 footer {
     background-color: #f2f2f2;
