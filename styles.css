@@ -1,5 +1,13 @@
+* {
+    box-sizing: border-box;
+  }
+
 .fa-star  {
     color: #0065FC;
+}
+
+.fa-star-grey {
+    color: grey;
 }
 
 .fa-duotone {
@@ -19,11 +27,9 @@ li {
 }
 
 body {
-    display: block;
     width: 100%;
     font-family: 'Raleway', sans-serif;
     margin: 0; 
-
 }
 
 nav {
@@ -63,15 +69,16 @@ nav li {
     border: 2px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     margin: 20px -4px 20px 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
 }
 
 .barre-de-recherche {
     color: black;
-    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-family: bold, 'Raleway', sans-serif;
     border: 1px solid #f2f2f2;
     font-weight: bold;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 0px 15px 15px;
 }
 
 .bouton-de-recherche {
@@ -80,10 +87,11 @@ nav li {
     border-color: #0065FC;
     color: white;
     font-weight: bold;
+    font-size: large;
     font-family: 'Raleway', sans-serif;
     border-radius: 0px 15px 15px 0px;
     margin: 20px 20px 20px -4px;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
     cursor: pointer;
 }
 
@@ -97,7 +105,7 @@ nav li {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     border-color: black;
-    padding: 0.5em;
+    padding: 1em;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
@@ -110,9 +118,11 @@ nav li {
 }
 
 .filtres-icones {
+    display: inline-flex;
     border: 3px #F2F2F2 solid;
     border-radius: 200px;
     margin: 20px;
+    cursor: pointer;
 }
 
 .icone-info {
@@ -128,65 +138,61 @@ nav li {
     margin-top: 15px;
 }
 
+.fa-chart-line {
+    display: flex;
+}
+
 .premier-bloc {
     display: flex;
-    margin: 0;
+    width: 100%;
 }
 
 .hebergements-a-marseille {
     background-color: #f2f2f2;
-    width: 895px;
-    height: 684px;
-    justify-content: space-between;
+    width: 70%;
     border-radius: 20px;
-    padding: 1em 2em 2em 2em;
-    margin-right: 2em;
-    flex: 3;
+    margin: 2vw 2vw 0 2vw;
 }
 
-.container-1 {
-    display: inline-flex;
-    justify-content: center;
-    border-radius: 20px;
-    margin: 20, 20, 20, 20;
+#container-6-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card-1 {
     width: 17vw;
-    margin: 0 0 2vw 0;
+    font-size: 1rem;
+    margin: 0 2vw 2vw 0;
     background-color: white;
     padding: 5px 5px 10px 5px;
     border-radius: 20px;
     box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
-    font-size: 0.8rem;
 }
 
 .card-image-1 {
-    width: 17vw;
+    width: 16.4vw;
     height: 7vw;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 50% 60%;
     overflow: hidden;
+}
+
+.titre-pop{
+    display: flex;
 }
 
 .les-plus-populaires {
     background-color: #f2f2f2;
-    padding: 1em 2em 2em 2em;
-    width: 440px;
-    height: 684px;
+    width: 30%;
     flex-direction:column;
     align-content: center;
+    margin: 2vw 2vw 0 0vw;
     border-radius: 20px;
 }
 
-.container-2 {
-    display: block;
-    justify-content: center;
-}
-
 .card-2 {
-    display: flex;
     width: 25vw;
     height: 10vw;
     background-color: white;
@@ -198,38 +204,22 @@ nav li {
     margin-bottom: 2vw;
 }   
 
-.pop {
-    display: block;
-    flex-direction: column;
-}
 .card-image-2 {
-    width: 10vw;
-    height: auto;
+    width: 8vw;
+    height: 9.4vw;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     object-position: 50% 50%;
 }
-   
-
-.second-bloc {
-    display: flex;
-    border-radius: 20px;
-    padding: 1em 2em 2em 2em;
-    width: 100%;
-    margin: 0;
-}
 
 .activites-a-marseille {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: block;
-    width: 100%;
     padding: 1em 2em 2em 2em;
-}
+}    
 
-.container-3 {
-    display: inline-block;
-    justify-content: center;
+.double-card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .card-3 {
@@ -240,8 +230,7 @@ nav li {
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 2vw;
 }
 
 .card-image-3 {
@@ -251,19 +240,14 @@ nav li {
     border-radius: 20px 20px 0 0;
 }   
 
-.container-4 {
-    display: inline-block;
-    justify-content: center;
-}
-
 .card-4 {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 2vw;
+    margin-left: vw;
 }
 
 .card-image-4 {
@@ -273,11 +257,6 @@ nav li {
     border-radius: 20px 20px 0 0;
 }   
 
-.container-5 {
-    display: inline-block;
-    justify-content: center;
-}
-
 .card-5 {
     width: 20vw;
     height: auto;
@@ -286,8 +265,7 @@ nav li {
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin-right: 0;
-    margin-left: 0;
+    margin : 2vw 0 0 0;
 }
 
 .card-image-5 {
@@ -295,11 +273,6 @@ nav li {
     height: 11.4vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-}
-
-.container-6 {
-    display: inline-block;
-    justify-content: center;
 }
 
 .card-6 {
@@ -310,8 +283,7 @@ nav li {
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin-right: 0;
-    margin-left: 0;
+    margin : 2vw 0 0 0;
 }
 
 .card-image-6 {
@@ -328,17 +300,16 @@ footer {
 }
 
 footer a {
+    display: block;
     text-decoration: none; 
     color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
 }
 
 .footer-items {
     font-weight: bold;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
     padding-right: 300px;
 }
