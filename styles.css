@@ -2,11 +2,11 @@
     box-sizing: border-box;
   }
 
-.fa-star  {
+.fa-star {
     color: #0065FC;
 }
 
-.fa-star-grey {
+.grey {
     color: grey;
 }
 
@@ -46,9 +46,16 @@ nav a {
 
 .mouse-hover:hover {
     border-top: solid;
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     color: #0065FC;
 }
+
+.hover-link {
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-weight: 600;
+}    
 
 nav img {
     height: 40px;
@@ -98,6 +105,10 @@ nav li {
 .filtres {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
 }
 
 .filtres-titres {
@@ -127,16 +138,22 @@ nav li {
 
 .icone-info {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .fa-info {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #f2f2f2;
-    margin-right: 10px;
-    margin-top: 15px;
-}
+    border: 2px solid #F2F2F2;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+}    
 
 .fa-chart-line {
     display: flex;
@@ -181,6 +198,11 @@ nav li {
 
 .titre-pop{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .les-plus-populaires {
@@ -190,6 +212,11 @@ nav li {
     align-content: center;
     margin: 2vw 2vw 0 0vw;
     border-radius: 20px;
+}
+
+.etoiles {
+    display: block;
+    flex-wrap: wrap;
 }
 
 .card-2 {
@@ -202,6 +229,10 @@ nav li {
     font-size: 1rem;
     margin: auto;
     margin-bottom: 2vw;
+    display: inline-block;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }   
 
 .card-image-2 {
@@ -214,7 +245,7 @@ nav li {
 
 .activites-a-marseille {
     padding: 1em 2em 2em 2em;
-}    
+}
 
 .double-card-1 {
     display: flex;
@@ -231,6 +262,10 @@ nav li {
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
     margin-right: 2vw;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .card-image-3 {
