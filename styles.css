@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
-  }
+  }  
 
 .fa-star {
     color: #0065FC;
 }
 
 .grey {
-    color: grey;
+    color: #F2F2F2;
 }
 
 .fa-duotone {
@@ -29,7 +29,7 @@ li {
 body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    margin: 0; 
+    margin: 50px; 
 }
 
 nav {
@@ -129,7 +129,6 @@ nav li {
 }
 
 .filtres-icones {
-    display: inline-flex;
     border: 3px #F2F2F2 solid;
     border-radius: 200px;
     margin: 20px;
@@ -220,6 +219,7 @@ nav li {
 }
 
 .card-2 {
+    display: flex;
     width: 25vw;
     height: 10vw;
     background-color: white;
@@ -229,11 +229,21 @@ nav li {
     font-size: 1rem;
     margin: auto;
     margin-bottom: 2vw;
-    display: inline-block;
-    flex-direction: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
-}   
+    flex-wrap: nowrap;
+}  
+
+.txt-prix-card-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 10px;
+}
 
 .card-image-2 {
     width: 8vw;
@@ -264,13 +274,13 @@ nav li {
     margin-right: 2vw;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .card-image-3 {
-    width: 20vw;
-    height: 37vw;
+    width: 100%;
+    height: 450px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }   
@@ -281,13 +291,11 @@ nav li {
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin-right: 2vw;
-    margin-left: vw;
 }
 
 .card-image-4 {
-    width: 20vw;
-    height: 20vw;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }   
@@ -300,12 +308,11 @@ nav li {
     border-radius: 20px;
     box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
-    margin : 2vw 0 0 0;
 }
 
 .card-image-5 {
-    width: 20vw;
-    height: 11.4vw;
+    width: 100%;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -322,8 +329,8 @@ nav li {
 }
 
 .card-image-6 {
-    width: 20vw;
-    height: 15.7vw;
+    width: 100%;
+    height: 100px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
